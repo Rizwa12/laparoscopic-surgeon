@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  --primary: #087f8c;
+  --primary-dark: #05616b;
+  --secondary: #123c4a;
+  --accent: #d7a94b;
+  --text-muted: #65767d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #18323b;
+}

@@ -1,0 +1,150 @@
+<div class="container py-5">
+
+  <!-- ADD POST -->
+
+  <div class="card shadow-sm p-4 mb-5">
+
+    <h3 class="mb-4">
+      Add New Post
+    </h3>
+
+    <!-- Title -->
+
+    <div class="mb-3">
+
+      <label class="form-label">
+        Post Title
+      </label>
+
+      <input
+        type="text"
+        class="form-control"
+        name="title"
+        [(ngModel)]="newPost.title"
+        placeholder="Enter post title">
+
+    </div>
+
+
+    <!-- Description -->
+
+    <div class="mb-3">
+
+      <label class="form-label">
+        Description
+      </label>
+
+      <textarea
+        class="form-control"
+        name="description"
+        rows="5"
+        [(ngModel)]="newPost.description"
+        placeholder="Enter description">
+      </textarea>
+
+    </div>
+
+
+    <!-- Image -->
+
+    <div class="mb-3">
+
+      <label class="form-label">
+        Image
+      </label>
+
+      <input
+        type="file"
+        class="form-control"
+        accept="image/*"
+        (change)="onImageSelected($event)">
+
+    </div>
+
+
+    <!-- Preview -->
+
+    <div
+      *ngIf="newPost.image"
+      class="mb-3">
+
+      <img
+        [src]="newPost.image"
+        width="200"
+        height="120"
+        style="object-fit: cover;">
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="addPost()">
+
+      Add Post
+
+    </button>
+
+  </div>
+
+
+  <!-- POSTS -->
+
+  <h3 class="mb-4">
+    Latest 5 Posts
+  </h3>
+
+
+  <div class="row">
+
+    <div
+      class="col-md-4 mb-4"
+      *ngFor="let post of latestPosts()">
+
+      <div class="card h-100">
+
+        <img
+          *ngIf="post.image"
+          [src]="post.image"
+          class="card-img-top"
+          style="height:200px; object-fit:cover;">
+
+        <div class="card-body">
+
+          <small class="text-muted">
+            {{ post.date }}
+          </small>
+
+          <h5 class="mt-2">
+            {{ post.title }}
+          </h5>
+
+          <p>
+            {{ post.description }}
+          </p>
+
+        </div>
+
+        <div class="card-footer">
+
+          <button
+            type="button"
+            class="btn btn-danger btn-sm"
+            (click)="deletePost(post.id)">
+
+            Delete
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

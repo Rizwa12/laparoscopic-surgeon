@@ -1,0 +1,435 @@
+.hero-section {
+  background: linear-gradient(135deg, #f5fbff 0%, #ffffff 100%);
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.hero-subtitle,
+.section-subtitle {
+  color: #0d6efd;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.hero-section h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #172033;
+  margin: 20px 0;
+}
+
+.hero-section h1 span,
+.section-heading h2 span,
+.about-preview h2 span,
+.why-section h2 span {
+  color: #0d6efd;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.8;
+  max-width: 580px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+}
+
+.doctor-stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 45px;
+}
+
+.doctor-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-stats strong {
+  font-size: 25px;
+  color: #172033;
+}
+
+.doctor-stats span {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.doctor-image-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.image-background {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: #dff2ff;
+  border-radius: 50%;
+  right: 0;
+  bottom: 5%;
+}
+
+.doctor-image {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.experience-card {
+  position: absolute;
+  z-index: 2;
+  left: -20px;
+  bottom: 30px;
+  background: white;
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.experience-card i {
+  font-size: 30px;
+  color: #0d6efd;
+}
+
+.experience-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-card strong {
+  color: #172033;
+}
+
+.experience-card span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+/* General Sections */
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin: auto;
+}
+
+.section-heading h2,
+.about-preview h2,
+.why-section h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #172033;
+  margin: 15px 0;
+}
+
+.section-heading p,
+.about-preview p,
+.why-section > .container p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+
+/* About */
+
+.about-image {
+  padding: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Services */
+
+.services-section {
+  background: #f8fbff;
+}
+
+.service-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 15px;
+  height: 100%;
+  border: 1px solid #edf2f7;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: #e9f5ff;
+  color: #0d6efd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-card h4 {
+  color: #172033;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.service-card a,
+.story-card a,
+.post-card a {
+  color: #0d6efd;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* Why Section */
+
+.feature-item {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  font-size: 25px;
+  color: #0d6efd;
+}
+
+.feature-item h5 {
+  margin: 0 0 5px;
+  color: #172033;
+}
+
+.feature-item p {
+  margin: 0;
+  color: #64748b;
+}
+
+.why-image img {
+  width: 100%;
+  height:500px;
+  border-radius: 20px;
+}
+
+
+/* Success Stories */
+
+.success-section {
+  background: #f8fbff;
+}
+
+.story-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.story-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.story-content {
+  padding: 25px;
+}
+
+.story-content span {
+  color: #0d6efd;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.story-content h4 {
+  margin: 10px 0;
+  color: #172033;
+}
+
+.story-content p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+
+/* Posts */
+
+.post-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #edf2f7;
+}
+
+.post-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 25px;
+}
+
+.post-content small {
+  color: #64748b;
+}
+
+.post-content h4 {
+  color: #172033;
+  margin: 12px 0;
+}
+
+.post-content p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+
+/* Appointment */
+
+.appointment-section {
+  padding: 70px 0;
+}
+
+.appointment-box {
+  background: #0d6efd;
+  border-radius: 20px;
+  padding: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.appointment-box span {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.appointment-box h2 {
+  margin: 10px 0;
+  font-size: 35px;
+}
+
+.appointment-box p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.appointment-box .btn {
+  white-space: nowrap;
+  padding: 12px 25px;
+  border-radius: 30px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 42px;
+  }
+
+  .doctor-image-wrapper {
+    margin-top: 50px;
+  }
+
+  .about-preview h2,
+  .why-section h2,
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .appointment-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .hero-section h1 {
+    font-size: 35px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .doctor-stats {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .experience-card {
+    left: 10px;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .appointment-box {
+    padding: 30px;
+  }
+
+  .appointment-box h2 {
+    font-size: 28px;
+  }
+
+}

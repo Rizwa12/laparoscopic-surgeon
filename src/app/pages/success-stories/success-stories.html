@@ -1,0 +1,94 @@
+<section class="success-section">
+
+  <div class="container">
+
+    <!-- Heading -->
+
+    <div class="section-heading text-center">
+
+      <span class="section-subtitle">
+        SUCCESS STORIES
+      </span>
+
+      <h2>
+        Surgical Success Stories
+      </h2>
+
+      <p>
+        A selection of surgical cases demonstrating our
+        commitment to safe and modern patient care.
+      </p>
+
+    </div>
+
+
+    <!-- Stories -->
+
+    <div class="row g-4 mt-4">
+
+      <div
+        class="col-md-6 col-lg-4"
+        *ngFor="let story of stories">
+
+        <div class="story-card">
+
+
+          <!-- Image -->
+
+          <div class="story-image">
+
+            <img
+              [src]="story.image"
+              [alt]="story.title">
+
+          </div>
+
+
+          <!-- Content -->
+
+          <div class="story-content">
+
+            <span class="story-category">
+
+              {{ story.category }}
+
+            </span>
+
+
+            <h4>
+
+              {{ story.title }}
+
+            </h4>
+
+
+            <p>
+
+              {{ story.description }}
+
+            </p>
+
+
+            <div class="result">
+
+              <strong>
+                Result:
+              </strong>
+
+              <span>
+                {{ story.result }}
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

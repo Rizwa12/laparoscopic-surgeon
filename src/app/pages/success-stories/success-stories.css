@@ -1,0 +1,158 @@
+.success-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+/* Heading */
+.section-heading {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  color: #6c757d;
+}
+
+
+/* STORY CARD */
+
+.story-card {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* IMAGE */
+
+.story-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* CONTENT */
+
+.story-content {
+  position: relative;
+  display: block;
+  padding: 25px;
+  background: #ffffff;
+  color: #212529;
+}
+
+
+/* CATEGORY */
+
+.story-category {
+  display: block;
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+/* TITLE */
+
+.story-content h4 {
+  display: block;
+  color: #212529;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+
+/* DESCRIPTION */
+
+.story-content p {
+  display: block;
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+
+/* RESULT */
+
+.result {
+  display: block;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+}
+
+.result strong {
+  display: block;
+  color: #212529;
+  margin-bottom: 5px;
+}
+
+.result span {
+  display: block;
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* HOVER */
+
+.story-card {
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .success-section {
+    padding: 60px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .story-image {
+    height: 220px;
+  }
+
+  .story-image img {
+    height: 220px;
+  }
+
+}

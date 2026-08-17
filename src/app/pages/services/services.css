@@ -1,0 +1,112 @@
+.services-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #0d6efd;
+}
+
+.section-heading h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+
+/* Service Card */
+
+.service-card {
+  height: 100%;
+  padding: 35px 28px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Icon */
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #eaf4ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon i {
+  font-size: 30px;
+  color: #0d6efd;
+}
+
+
+/* Title */
+
+.service-card h4 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.service-card p {
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+
+/* Link */
+
+.service-card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+}

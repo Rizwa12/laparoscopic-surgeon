@@ -1,0 +1,238 @@
+<section class="contact-section">
+
+  <div class="container">
+
+    <!-- Heading -->
+
+    <div class="section-heading text-center">
+
+      <span class="section-subtitle">
+        CONTACT US
+      </span>
+
+      <h2>
+        Get In Touch
+      </h2>
+
+      <p>
+        If you have questions or would like to schedule a
+        consultation, please contact us.
+      </p>
+
+    </div>
+
+
+    <div class="row g-5 mt-4">
+
+
+      <!-- Contact Information -->
+
+      <div class="col-lg-5">
+
+        <div class="contact-info">
+
+          <h3>
+            Contact Information
+          </h3>
+
+          <p>
+            Our team is available to assist you with
+            appointments and general inquiries.
+          </p>
+
+
+          <!-- Phone -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+
+            <div>
+              <h5>Phone</h5>
+
+              <a href="tel:+92 321 9804794">
+                +92 321 9804794
+              </a>
+            </div>
+
+          </div>
+
+
+          <!-- Email -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <div>
+              <h5>Email</h5>
+
+              <a href="mailto:doctor@example.com">
+                doctor@example.com
+              </a>
+            </div>
+
+          </div>
+
+
+          <!-- Location -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+
+            <div>
+              <h5>Location</h5>
+
+              <span>
+                Awan Plaza Abbottabad
+              </span>
+            </div>
+
+          </div>
+
+
+          <!-- Timing -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              <i class="bi bi-clock"></i>
+            </div>
+
+            <div>
+              <h5>Consultation Hours</h5>
+
+              <span>
+                Monday - Saturday
+              </span>
+
+              <br>
+
+              <span>
+                4:00 PM - 8:00 PM
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Contact Form -->
+
+      <div class="col-lg-7">
+
+        <div class="contact-form">
+
+          <h3>
+            Send Us A Message
+          </h3>
+
+
+          <!-- Name -->
+
+          <div class="mb-3">
+
+            <label class="form-label">
+              Your Name
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              [(ngModel)]="contact.name"
+              placeholder="Enter your name">
+
+          </div>
+
+
+          <div class="row">
+
+
+            <!-- Email -->
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Email
+              </label>
+
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                [(ngModel)]="contact.email"
+                placeholder="Enter your email">
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Phone
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                name="phone"
+                [(ngModel)]="contact.phone"
+                placeholder="Enter your phone">
+
+            </div>
+
+          </div>
+
+
+          <!-- Message -->
+
+          <div class="mb-3">
+
+            <label class="form-label">
+              Message
+            </label>
+
+            <textarea
+              class="form-control"
+              name="message"
+              [(ngModel)]="contact.message"
+              rows="6"
+              placeholder="Write your message">
+            </textarea>
+
+          </div>
+
+
+          <!-- Button -->
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="submitForm()">
+
+            Send Message
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
