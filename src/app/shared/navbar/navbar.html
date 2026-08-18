@@ -1,88 +1,134 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+
   <div class="container">
 
     <!-- Logo / Doctor Name -->
-    <a class="navbar-brand d-flex align-items-center" routerLink="/">
-      
+    <a
+      class="navbar-brand d-flex align-items-center"
+      routerLink="/"
+      (click)="closeMenu()">
+
       <div class="logo-icon">
         <i class="bi bi-heart-pulse"></i>
       </div>
 
       <div class="ms-2">
-        <div class="doctor-name">Dr. Sajjad Ahmad</div>
-        <small>Laparoscopic Surgeon</small>
+        <div class="doctor-name">
+          Dr. Sajjad Ahmad
+        </div>
+
+        <small>
+          Laparoscopic Surgeon
+        </small>
       </div>
 
     </a>
+
 
     <!-- Mobile Menu Button -->
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar">
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation">
 
       <span class="navbar-toggler-icon"></span>
 
     </button>
 
+
     <!-- Navigation -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
+    <div
+      class="collapse navbar-collapse"
+      [class.show]="menuOpen"
+      id="mainNavbar">
 
       <ul class="navbar-nav ms-auto align-items-lg-center">
 
+        <!-- Home -->
         <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/"
             routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }">
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()">
+
             Home
+
           </a>
         </li>
 
+
+        <!-- About -->
         <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/about"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="closeMenu()">
+
             About
+
           </a>
         </li>
 
+
+        <!-- Services -->
         <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/services"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="closeMenu()">
+
             Services
+
           </a>
         </li>
 
+
+        <!-- Success Stories -->
         <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/success-stories"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="closeMenu()">
+
             Success Stories
+
           </a>
         </li>
 
+
+        <!-- Posts -->
         <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/posts"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="closeMenu()">
+
             Posts
+
           </a>
         </li>
 
+
+        <!-- Contact -->
         <li class="nav-item ms-lg-3">
+
           <a
             class="btn btn-primary contact-btn"
-            routerLink="/contact">
+            routerLink="/contact"
+            (click)="closeMenu()">
+
             Contact Us
+
           </a>
+
         </li>
 
       </ul>
@@ -90,4 +136,5 @@
     </div>
 
   </div>
+
 </nav>

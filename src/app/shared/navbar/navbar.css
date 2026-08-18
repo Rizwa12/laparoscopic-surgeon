@@ -1,47 +1,182 @@
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
   min-height: 75px;
+  padding: 10px 0;
 }
 
 .navbar-brand {
   text-decoration: none;
+  min-width: 0;
 }
 
 .logo-icon {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: #0d6efd;
   color: white;
-  font-size: 22px;
+
+  font-size: 21px;
+  flex-shrink: 0;
 }
 
 .doctor-name {
   font-size: 18px;
   font-weight: 700;
   color: #1f2937;
+  line-height: 1.2;
 }
 
-.navbar-brand small {
+.brand-text small {
   color: #6b7280;
   font-size: 12px;
 }
 
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar-nav {
+  gap: 5px;
+}
+
 .nav-link {
+  color: #374151 !important;
   font-weight: 500;
-  color: #374151;
-  margin: 0 7px;
+  padding: 8px 12px !important;
   transition: 0.3s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #0d6efd;
+  color: #0d6efd !important;
 }
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
 
 .contact-btn {
   padding: 9px 20px;
-  border-radius: 25px;
+  border-radius: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.contact-item {
+  margin-left: 10px;
+}
+
+
+/* =========================
+   MOBILE / TABLET
+========================= */
+
+@media (max-width: 991.98px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .navbar-brand {
+    max-width: calc(100% - 60px);
+  }
+
+  .doctor-name {
+    font-size: 16px;
+  }
+
+  .brand-text small {
+    font-size: 11px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  /* Mobile menu */
+
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 0 5px;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    gap: 0;
+
+    align-items: stretch !important;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 10px !important;
+
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .contact-item {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+  .navbar {
+    min-height: 65px;
+  }
+
+  .doctor-name {
+    font-size: 14px;
+  }
+
+  .brand-text small {
+    font-size: 10px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .navbar-toggler {
+    padding: 5px 8px;
+  }
+
 }
